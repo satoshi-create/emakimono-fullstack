@@ -15,3 +15,20 @@ model Test {
   name  String
   isCompleted Boolean @default(false)
 }
+
+model EmakiMetaData{
+  id  Int @id @default(autoincrement())
+  title  String
+  titleen String
+  thumb String?
+  desc String?
+  kotobagaki Boolean @default(false)
+  keyword Keyword[] @relation("EmakiMetaDataToKeyword")
+}
+
+model Keyword {
+  id Int @id @default(autoincrement())
+  name String
+  nameen String
+  emakimetadata EmakiMetaData[] @relation("EmakiMetaDataToKeyword")
+}

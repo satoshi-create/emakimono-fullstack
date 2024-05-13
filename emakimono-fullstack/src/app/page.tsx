@@ -1,8 +1,8 @@
 import prisma from "@/lib/prisma";
 
 const Page = async () => {
-  const test = await prisma.test.findMany();
-console.log(test);
+  const data = await prisma.emakiMetaData.findMany();
+console.log(data);
 
   return (
     <div className="m-8">
