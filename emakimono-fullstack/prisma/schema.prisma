@@ -17,18 +17,28 @@ model Test {
 }
 
 model EmakiMetaData{
-  id  Int @id @default(autoincrement())
+  id   String @id @default(uuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt 
   title  String
-  titleen String
+  titleen String @unique
   thumb String?
   desc String?
   kotobagaki Boolean @default(false)
   keyword Keyword[] @relation("EmakiMetaDataToKeyword")
+  type Type[] @relation("EmakiMetaDataToType")
 }
 
 model Keyword {
-  id Int @id @default(autoincrement())
+  id   String @id @default(uuid())
   name String
-  nameen String
+  nameen String @unique
   emakimetadata EmakiMetaData[] @relation("EmakiMetaDataToKeyword")
+}
+
+model Type {
+  id   String @id @default(uuid())
+  name String
+  nameen String @unique
+  emakimetadata EmakiMetaData[] @relation("EmakiMetaDataToType")
 }

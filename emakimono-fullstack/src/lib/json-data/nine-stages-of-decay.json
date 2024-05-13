@@ -1,0 +1,35 @@
+[
+  {
+    "titleen": "nine-stages-of-decay",
+    "data": [
+      {
+        "cat": "ekotoba",
+        "chapter": " 【第０相】生前相",
+        "kobun": "",
+        "gendaibun": "",
+        "desc": "",
+        "load": "",
+        "srcSp": "",
+        "srcTb": "",
+        "src": "",
+        "name": "",
+        "srcWidth": "",
+        "srcHeight": ""
+      },
+      {
+        "cat": "image",
+        "chapter": "",
+        "kobun": "",
+        "gendaibun": "",
+        "desc": "",
+        "load": "True",
+        "srcSp": "/kusouzu_01-375.webp",
+        "srcTb": "/kusouzu_01-800.webp",
+        "src": "/kusouzu_01-1080.webp",
+        "name": "kusouzu_01.webp",
+        "srcWidth": "1757",
+        "srcHeight": "1080"
+      }
+    ]
+  }
+]
